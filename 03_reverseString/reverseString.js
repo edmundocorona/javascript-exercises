@@ -1,9 +1,8 @@
 const reverseString = function(string) {
-  let stringReversed = '';
-  for (i = string.length; i >= 0; i--) {
-    stringReversed += string.charAt(i);
-  }
-  return stringReversed;
+  const stringArray = string.split('');
+  const stringArrayReversed = stringArray.reverse();
+  const stringReversed = stringArrayReversed.join('');
+  return stringReversed; 
 };
 
 // Do not edit below this line
